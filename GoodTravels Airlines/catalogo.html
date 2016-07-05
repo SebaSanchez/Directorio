@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Catalogo - GoodTravels Airlines</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery-ui.min.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+.oculto { display: none; }
+.visible { display: inline; }
+</style>
+</head>
+
+<body onload="drawPicture()" bgcolor="#CCCCCC">
+<header> <!-- CABECERA DEL BODY -->
+  <img src="img/goodtravels2.png" width="1350" height="150" align="middle"/>
+  <h1 align="center" style="color:#06C">Catalogo de Servicios</h1>
+  
+</header>
+<HR />
+
+<div class="container">
+    <nav><!--BARRA DE NAVEGACION -->
+    <ul class="nav nav-tabs">
+    <li> <a href="index.html"> Index</a> </li>
+   <li> <a href="informacion.html">Más información</a>  </li>
+	<li> <a href="formulario.html"> Formulario de Registro</a> </li>
+    <li> <a href="formulario2.html"> Formuario de Reclamo y Preguntas</a> </li>
+    <li class="active"> <a href="catalogo.html"> Catalogo</a> </li>
+     </ul>
+    </nav>  
+   
+
+   <section class="row well">
+   <table width="200" id="tablaPrincipal">
+  <tr>
+    <td class="col-md-4 bg-info "><article >
+       	<h4>Servicios de Comida </h4>
+       	<img src="img/comida.jpg" width="297" height="180" alt="Comida" class="img-rounded"/>
+        <p>Aerolíneas GoodTrales,  cuenta con diversos platos de comida, para los distintos gustos de nuestros pasajeros,<span id="adicional" class="oculto"> para que el hambre nunca sea parte de su viaje. </span></p>
+        <a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a>
+        <a href="http://www.elajiseco.cl/" class="btn btn-default"> Ingrese Aqui </a>
+        </article></td>
+        
+    <td class="col-md-4 bg-success "><article >
+       	<h4>Variadad Musical</h4>
+       	<img src="img/musica.jpg" width="297" height="180" class="img-rounded"/>
+       	<p>Le entregamos una amplia variedad de generos musicales para que pueda acompañar sus viajes, ya sea con musica ambiente o a traves de una amplia biblioteca disponible en cada uno de nuestros servicios.</p> 
+        <a href="https://www.musicadechile.com/" class="btn btn-default"> Ingrese Aqui </a>
+        </article></td>
+        
+    <td  class="col-md-4 bg-primary "><article>
+       	<h4>Libros</h4>
+      	<img src="img/Libros.jpg" width="297" height="180" class="img-rounded"/>
+       	<p>Si sus gustos son mayormente de lectura, tenemos disponible una amplia variedad de libros que abordan distintos temas para nuestros lectores viajeros.</p>
+        
+<a href="http://www.bibliotecanacionaldigital.cl/" class="btn btn-default">  Ingrese Aqui </a> </article></td>
+        
+  </tr>
+  <tr>
+    <td class="col-md-4 bg-info"><article >
+       	<h4>Contempla el paisaje</h4>
+       	<img src="img/Ventana.jpg" width="297" height="180" class="img-rounded"/>
+       	<p>Contamos con amplios y seguras ventanas para que nuestros pasajeros se sientan seguros y a la vez puedan sentir que tocan el cielo.</p>
+        <a href="http://www.despegar.cl/" class="btn btn-default"> Ingrese Aqui </a>
+        </article></td>
+        
+    <td class="col-md-4 bg-success "><article >
+       	<h4>Peliculas</h4>
+       	<img src="img/peliculas.jpg" width="297" height="180" class="img-rounded"/>
+       	<p>Usted podra disfrutar de las mas actuales peliculas y de clasicos del cine, desde la comodidad de su asiento.</p>
+        <a href="http://pelis24.com/" class="btn btn-default"> Ingrese Aqui </a>
+        </article></td>
+        
+    <td class="col-md-4 bg-primary"><article >
+       	<h4>Bebestibles</h4>
+       	<img src="img/bebida.jpg" width="297" height="180" class="img-rounded"/>
+        <p>Viaje hidratado, contamos con variedad de jugos naturales y distintos tipos de cafe, para los distintos gustos, y para todas las epocas del año.</p>
+        <a href="http://www.jugos-curativos.com/" class="btn btn-default">  Ingrese Aqui </a>
+        </article></td>
+  </tr>
+</table>
+<hr/>
+<p>
+	<a href="#" id="aplicarEfecto">Ocultar Catálogo   </a>
+	<a href="#" id="quitarEfecto">Mostrar Catálogo</a>    
+</p>
+<hr/>
+    <H3>Opina sobre este catálogo</H3>
+    <img src="img/Boton_Me_gusta.jpg" alt="Me Gusta" id="imgYES" width="200" />  
+
+    <div id="dialogo" title="ENVIO EXITOSO">
+	<p>¡Gracias por opninar sobre el catálogo</p>
+</div>
+
+<div id="capa">
+	<button class="btn btn-success glyphicon glyphicon-info" id="abrirDialogo">OK</button>
+</div>
+<div id="mensaje">
+	¿Estas seguro?
+</div>
+       
+    </section>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script--> 
+<script src="js/jquery-1.12.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/catalogo.js"></script>
+</body> 
+  
+  
+     <hr/>  
+     <div class="container alert alert-info">
+       	 <h5>
+        Contactanos: <br />
+        Bas Tantelejos #1250 <br />
+        contacto@goodtravels.cl <br />
+        600 2000 600
+        </h5>
+    	<h6 style="color:#06C">Página Oficial GoodTravels Airlines &reg;</h6>
+        </div>
+    </footer>
+    
+    </section>
+    </div>
+
+</html>

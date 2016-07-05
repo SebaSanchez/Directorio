@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario - GoodTravels Airlines</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body onload="drawPicture()" bgcolor="#CCCCCC">
+<header> <!-- CABECERA DEL BODY -->
+  <img src="img/goodtravels2.png" width="1350" height="150" align="middle"/>
+  <h1 align="center" style="color:#06C">Formulario de Inscripción </h1>
+</header>
+<HR />
+<nav><!--BARRA DE NAVEGACION -->
+     <ul class="nav nav-tabs">
+      <li><a href="index.html">Index</a>  </li>
+     <li><a href="informacion.html">Más información</a>  </li>
+	  <li class="active" ><a href="formulario.html"> Formulario de Registro</a> </li>
+      <li><a href="formulario2.html"> Formuario de Reclamo y Preguntas</a> </li>
+     <li> <a href="catalogo.html"> Catalogo</a> </li>
+     </ul>
+    </nav>
+    <hr/>
+    
+    
+    
+    <form role="form">
+    <div class="container">
+	<fieldset>
+    <legend> DATOS PRINCIPALES </legend>
+    	<label>
+    	  <div align="justify" class="form-group">Rut:</div>
+    	</label>
+            <div align="justify" id="rut_demo_1" >
+              <input type="text" class="form-control" name="rut_demo_1" placeholder="ej: 18993706k"  />
+              
+              <br /> 
+            </div>
+            
+        <label>
+              <div align="justify">Nombres:</div>
+        </label>
+            <div align="justify">
+              <input type="text" class="form-control" name="txtNombre" />
+              <br /> 
+            </div>
+            
+        <label>
+              <div align="justify">Apellidos:</div>
+        </label>
+            <div align="justify">
+              <input type="text" class="form-control" name="txtApellidos" /><br />
+            </div>
+            </fieldset>
+            
+            
+            <fieldset>
+             <legend> OTROS DATOS </legend>
+        <label>
+              <div align="justify">Télefono de Contacto:</div>
+        </label>
+            <div align="justify">
+              <input type="text"  class="form-control" name="txtTelefono" placeholder="9 dígitos" />
+              <br />
+                
+        </div>
+          <label>
+        <div align="justify">Email:</div>
+              </label>
+            <div align="justify">
+           <input  class="form-control" type="email" name="txtEmail"
+            placeholder="Indica tu correo" 
+            pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" /><br />
+            </div>
+            <label>
+              <div align="justify">Fecha de Nacimiento:</div>
+            </label>
+            <div align="justify">
+              <input type="date" class="form-control" name="txtNacimiento"  />
+              <br />
+            </div>
+    </fieldset>
+    
+    <hr />
+          <input class="btn btn-success glyphicon glyphicon-send" name="btnEnviar" type="submit" value="Enviar">
+		  
+   			<input name="btnRest" class="btn btn-danger" type="reset" value="Restaurar">
+      
+
+   <br>
+</div>
+</form>
+
+    <hr/>
+
+<hr/>
+    
+  <p class="container">
+
+   </p> 
+</body>
+
+    <hr/>
+    
+    
+     <footer>
+      <div class="container alert alert-info">
+       	 <h5>
+        Contactanos: <br />
+        Bas Tantelejos #1250 <br />
+        contacto@goodtravels.cl <br />
+        600 2000 600
+        </h5>
+    	<h6 style="color:#06C">Página Oficial GoodTravels Airlines &reg;</h6>
+        </div>
+    </footer>
+    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script--> 
+<script src="js/jquery-1.12.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.Rut.js"></script>
+<script src="js/jquery.Rut.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/formulario.js" </script>
+</html>
+

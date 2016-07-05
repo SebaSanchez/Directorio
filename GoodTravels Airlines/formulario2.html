@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario - GoodTravels Airlines</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body onload="drawPicture()" >
+<header> <!-- CABECERA DEL BODY --><img src="img/goodtravels2.png" width="1350" height="150" align="middle"/>
+  <h1 class="sombra1" align="center" style="color:#06C">Formulario de Reclamo o Preguntas</h1>
+</header>
+<HR />
+<nav><!--BARRA DE NAVEGACION -->
+     <ul class="nav nav-tabs">
+      <li ><a href="index.html">Index</a>  </li>
+     <li><a href="informacion.html">Más información</a>  </li>
+	  <li><a href="formulario.html"> Formulario de Registro</a> </li>
+      <li class="active"><a href="formulario2.html"> Formuario de Reclamo y Preguntas</a> </li>
+     <li> <a href="catalogo.html"> Catalogo</a> </li>
+     </ul>
+    </nav>
+    <hr/>
+      
+    <div class="container">
+    <section class="row well" >
+<h2>Seleccione una de las opciones</h2>
+<div id="acordion">
+	<h3>Reclamo</h3>
+    <div>
+    <form>
+    	<label> Rut:</label>
+        <input type="text" id="rut_demo_2" name="rut_demo_2" placeholder="18993706-7" />
+        
+         <br /> 
+         <label>Nombre:</label>
+        <input type="text" name="txtNombre" size="30"/>
+              <br/>
+              <label>Apellido:</label>
+        <input type="text" name="txtApelido" size="30"/>
+              <br/>
+              <label>Motivo Reclamo:</label> <br/>
+        <textarea name="txtMotivoReclamo" rows="3" cols="20"> </textarea>
+              <br/>
+              <label>Monto Objetado:</label>
+        <input type="text" name="txtApelido" size="30"/>
+              <br/>
+              <label>Medio de Contacto:</label>
+              <table width="200">
+      <tr>
+        <td><label>
+          <input type="radio" name="grpEmail" value="email">
+          Email</label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input type="radio" name="groTelefono" value="tel">
+          SMS o Llamada Télefonica</label></td>
+      </tr>
+    </table>
+              <br/>
+              <label>Comentarios:</label> <br/>
+              <textarea name="txtComentarios" rows="3" cols="30"> </textarea>
+              <br/>
+<input class="btn btn-success glyphicon glyphicon-send" name="btnEnviar" type="submit" value="Enviar">
+<input name="btnRest" class="btn btn-danger type="reset" value="Restaurar">
+      </form>
+    </div>
+  <h3>Pregunta</h3>
+    <div>
+    	<label> Rut:</label>
+        <input type="text" name="txtRut" placeholder="Ej: 18993706-7" size="30"/>
+         <br /> 
+         <label>Nombre:</label>
+        <input type="text" name="txtNombre" size="30"/>
+              <br/>
+              <label>Apellido:</label>
+        <input type="text" name="txtApelido" size="30"/>
+              <br/>
+              <label>Motivo Reclamo:</label> <br/>
+        <textarea name="txtMotivoReclamo" rows="3" cols="20"> </textarea>
+              <br/>
+              <label>Monto Objetado:</label>
+        <input type="text" name="txtApelido" size="30"/>
+              <br/>
+              <label>Medio de Contacto:</label>
+              <table width="200">
+      <tr>
+        <td><label>
+          <input type="radio" name="grpEmail" value="email">
+          Email</label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input type="radio" name="groTelefono" value="tel">
+          SMS o Llamada Télefonica</label></td>
+      </tr>
+    </table>
+              <br/>
+              <label>Pregunta:</label> <br/>
+      <textarea name="txtPregunta" rows="1" cols="30"> </textarea>
+              <br/>
+ <input class="btn btn-success glyphicon glyphicon-send" name="btnEnviar" type="submit" value="Enviar">
+<input name="btnRest" class="btn btn-danger type="reset" value="Restaurar">
+    </div>
+    <h3>Felitaciones</h3>
+    <div>
+    	<label> Rut:</label>
+        <input type="text" name="txtRut" placeholder="Ej: 18993706-7" size="30"/>
+         <br /> 
+         <label>Nombre:</label>
+        <input type="text" name="txtNombre" size="30"/>
+              <br/>
+              <label>Apellido:</label>
+        <input type="text" name="txtApelido" size="30"/>
+              <br/>
+              <label>Fecha:</label> <br/>
+        <input type="datetime" name="dateFecha"> </input>
+              <br/>
+              <label>Texto Feliciación:</label> <br/>
+              <textarea name="txtFelitacion" rows="3" cols="30"> </textarea>
+              <br/>
+                 <input class="btn btn-success glyphicon glyphicon-send" name="btnEnviar" type="submit" value="Enviar">
+   <input name="btnRest" class="btn btn-danger" type="reset" value="Restaurar">
+    </div>
+</div>  
+     
+    <hr />
+ 
+
+   
+</body>
+    	<br><hr/><br/>
+
+
+<footer >
+        	<div class="container alert alert-info">
+       	 <h5>
+        Contactanos: <br />
+        Bas Tantelejos #1250 <br />
+        contacto@goodtravels.cl <br />
+        600 2000 600
+        </h5>
+    	<h6 style="color:#06C">Página Oficial GoodTravels Airlines &reg;</h6>
+        </div>
+    </footer>
+    
+        
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script--> 
+<script src="js/jquery-1.12.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/mi_jqueryui_FORMULARIO2.js"></script>
+<script src="js/jquery.Rut.js"></script>
+<script src="js/jquery.Rut.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+</html>
+
